@@ -10,10 +10,33 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>electron-synthesizer</title>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <section id="soundfonts">
+      <p>Intalled Soundfonts</p>
+      <select size="4" id="soundfontslist">
+      </select>
+    </section>
+    <section id="presets">
+      <p>Presets</p>
+      <select size="4" id="presetslist">
+      </select>
+    </section>
+    <section id="saved">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+    </section>
+    <section id="effects">
+      some knobs
+    </section>
+    <script src="./renderer.js"></script>
   </body>
 </html>
