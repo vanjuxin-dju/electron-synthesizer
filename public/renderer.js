@@ -2,8 +2,8 @@ const soundFontsList = document.getElementById('soundfontslist')
 const presetsList = document.getElementById('presetslist')
 
 const getPresets = async (fileName) => {
-    const presets = await window.synthAPI.presets(fileName);
     presetsList.innerHTML = "";
+    const presets = await window.synthAPI.presets(fileName);
     presets.forEach(element => {
         const newOption = document.createElement("option");
         newOption.innerText = element;
